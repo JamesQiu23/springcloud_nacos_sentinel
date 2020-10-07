@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: nacos-provider-movie
+  cloud:
+    nacos:
+      server-addr: localhost:8848 #nacos注册中心的ip和端口号
+  sentinel:
+    transport:
+      # sentinel控制台和当前应用进行数据传递的端口号，默认是8719
+      port: 8719
+      # 当前服务模块连接到的sentinel控制台
+      dashboard: localhost:8080
+
+server:
+  port: 7000 #表示此服务的tomcat端口号
+
+
+
