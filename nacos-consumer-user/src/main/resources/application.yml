@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: nacos-consumer-user
+  cloud:
+    nacos:
+      server-addr: localhost:8848 #nacos注册中心的ip和端口号
+
+server:
+  port: 8000 #表示此服务的tomcat端口号
